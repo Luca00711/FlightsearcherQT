@@ -2,8 +2,8 @@
 // Created by Luca-Miguel Christiansen on 19.06.22.
 //
 
-#ifndef TEST1_AIRPORTS_H
-#define TEST1_AIRPORTS_H
+#ifndef FLIGHTSEARCHER_AIRPORTS_H
+#define FLIGHTSEARCHER_AIRPORTS_H
 #include <vector>
 #include <iostream>
 
@@ -21,4 +21,4 @@ public:
 };
 
 
-#endif //TEST1_AIRPORTS_H
+#endif //FLIGHTSEARCHER_AIRPORTS_H

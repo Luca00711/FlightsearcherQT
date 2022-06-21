@@ -2,8 +2,8 @@
 // Created by Luca-Miguel Christiansen on 18.06.22.
 //
 
-#ifndef TEST1_FLIGHTS_H
-#define TEST1_FLIGHTS_H
+#ifndef FLIGHTSEARCHER_FLIGHTS_H
+#define FLIGHTSEARCHER_FLIGHTS_H
 
 #include <iostream>
 #include <vector>
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //TEST1_FLIGHTS_H
+#endif //FLIGHTSEARCHER_FLIGHTS_H
