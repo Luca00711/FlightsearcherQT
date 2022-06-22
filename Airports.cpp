@@ -3,6 +3,7 @@
 //
 
 #include "Airports.h"
+#include "Flights.h"
 #include <vector>
 #include <cpr/cpr.h>
 #include <nlohmann/json.hpp>
@@ -13,7 +14,7 @@ using namespace std;
 std::vector<Airports::Airport> Airports::GetAirports() {
     vector<Airports::Airport> airports;
     cpr::Response r = cpr::Get(
-            cpr::Url{"https://www.flightradar24.com/_json/airports.php"});
+            cpr::Url{"https://www.flightradar24.com/_json/airports.php"}, cpr::Header{Flights::GetHeaders()});
     json j = json::parse(r.text);
     for (json &i: j["rows"]) {
         Airports::Airport a;
