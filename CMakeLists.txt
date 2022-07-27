@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
 project(Flightsearcher)
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTOMOC ON)
 IF (APPLE)
     set(CMAKE_THREAD_LIBS_INIT "-lpthread")
     set(CMAKE_HAVE_THREADS_LIBRARY 1)
@@ -19,7 +17,7 @@ ENDIF ()
 
 IF(WINDOWS)
     include("H:/Programmieren/vcpkg/scripts/buildsystems/vcpkg.cmake")
-    add_executable(Flightsearcher MACOSX_BUNDLE main.cpp Flights.cpp Airports.cpp Airlines.cpp)
+    add_executable(Flightsearcher WIN32 main.cpp Flights.cpp Airports.cpp Airlines.cpp)
 ENDIF()
 
 find_package(cpr CONFIG REQUIRED)
